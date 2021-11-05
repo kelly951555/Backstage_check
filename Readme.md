@@ -1,8 +1,7 @@
 使用說明
 ----
 1. `Backstage_check` 需與 `chromedriver.exe` 放在同一層
-2. 執行時間約 `130s`
-3. 執行完成會產生 `Backstage_check_YYYY-MM-DD.txt`
+2. 執行完成會產生 `Backstage_check_YYYY-MM-DD.txt`
 
 chromedriver version
 ----
@@ -19,6 +18,7 @@ Page List
 + 帳務-刮刮樂績效
 + 帳務-遊戲排行
 + 帳務-錯誤帳務
++ 帳務-補單帳務
 + 玩家-玩家資訊-玩家資訊
 + 玩家-玩家資訊-玩家帳戶
 + 玩家-玩家查詢
@@ -32,6 +32,7 @@ Page List
 + 玩家-裝置統計
 + 玩家-錢包轉換
 + 玩家-錢包查詢
++ 玩家-補錢結果查詢
 + 彩金-彩金(中獎名單)
 + 彩金-群組設定
 + 彩金-代理商獎池設定
