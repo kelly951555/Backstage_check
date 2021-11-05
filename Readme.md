@@ -1,6 +1,6 @@
 使用說明
 ----
-1. `Backstage_check` 需與 `chromedriver.exe` 放在同一層
+1. `Backstage_check` `config.ini` `chromedriver.exe` 需放在同一層
 2. 執行完成會產生 `Backstage_check_YYYY-MM-DD.txt`
 
 chromedriver version

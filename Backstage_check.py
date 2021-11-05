@@ -8,11 +8,14 @@ from pages import page_list
 import time
 import codecs
 import configparser
+import os
 
+fp_dir = os.getcwd()
+config_path = fp_dir + '/config.ini'
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(config_path)
 today = time.strftime("%Y-%m-%d")
-filepath = './Backstage_check_{}.txt'.format(today)
+filepath = fp_dir + '/Backstage_check_{}.txt'.format(today)
 f = codecs.open(filepath, 'w', 'utf-8')
 url = config['backstage']['url']
 username = config['backstage']['user']
