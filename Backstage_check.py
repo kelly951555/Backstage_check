@@ -9,13 +9,15 @@ import time
 import codecs
 import configparser
 import os
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-fp_dir = os.getcwd()
-config_path = fp_dir + '/config.ini'
+fp_dir = os.path.dirname(__file__)
+config_path = os.path.join(fp_dir, "config.ini")
 config = configparser.ConfigParser()
 config.read(config_path)
 today = time.strftime("%Y-%m-%d")
-filepath = fp_dir + '/Backstage_check_{}.txt'.format(today)
+filepath = './Backstage_check_{}.txt'.format(today)
 f = codecs.open(filepath, 'w', 'utf-8')
 url = config['backstage']['url']
 username = config['backstage']['user']
@@ -82,3 +84,4 @@ print("執行時間：%f 秒" % (end - start))
 f.write("執行時間：%f 秒" % (end - start) + '\n')
 f.close()
 driver.quit()
+os.system("pause")
