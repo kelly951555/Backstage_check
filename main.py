@@ -73,10 +73,9 @@ version = driver.find_element_by_xpath('/html/body/div[3]/div/div/div/div/div').
 print('版本: {}'.format(version))
 f.write('版本: {}\n'.format(version))
 print("PASS:{} ; FAIL:{} ; total:{}".format(PASS, FAIL, len(page_list)))
-f.write("PASS:{} ; FAIL:{} + ; total:{} \n".format(PASS, FAIL, len(page_list)))
+f.write("PASS:{} ; FAIL:{} ; total:{} \n".format(PASS, FAIL, len(page_list)))
 end = time.time()
 print("執行時間：%f 秒" % (end - start))
 f.write("執行時間：%f 秒" % (end - start) + '\n')
 f.close()
 driver.quit()
-
